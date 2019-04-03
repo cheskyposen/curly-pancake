@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,7 @@ import { HomeComponent } from './views/home/home.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { CounterComponent } from './views/counter/counter.component';
 import { AsteriskPipe } from './controllers/asterisk.pipe';
+import { DadJokeComponent } from './views/dad-joke/dad-joke.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { AsteriskPipe } from './controllers/asterisk.pipe';
     HomeComponent,
     NotFoundComponent,
     CounterComponent,
-    AsteriskPipe
+    AsteriskPipe,
+    DadJokeComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { AsteriskPipe } from './controllers/asterisk.pipe';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
